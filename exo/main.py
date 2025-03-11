@@ -37,6 +37,7 @@ import psutil
 os.environ["GRPC_VERBOSITY"] = "error"
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
 # Configure uvloop for maximum performance
 def configure_uvloop():
